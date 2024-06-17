@@ -14,11 +14,13 @@ export class SocialPostsComponent {
   allPosts: Post[] = [
     {
       title: "Shrimp",
-      thought: "Shrimp are neat!"
+      thought: "Shrimp are neat!",
+      likes: 1000
     },
     {
       title: "Motorcycles",
-      thought: "Motorcycles are cool!"
+      thought: "Motorcycles are cool!",
+      likes: 15
     }
   ];
 

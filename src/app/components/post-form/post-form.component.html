@@ -1,12 +1,15 @@
-<button (click)="toggleDisplay()">Create new post</button>
+<button class="toggleButton" (click)="toggleDisplay()">Create new post</button>
 
 @if(display){
-    <div>
-        <h2>New Post:</h2>
-        <label for="title">Title:</label>
-        <input id="title" type="text" [(ngModel)]="formPost.title" />
-        <label for="thought">Thougt:</label>
-        <input id="thought" type="text" [(ngModel)]="formPost.thought" />
-        <button (click)="submitPost()">Post</button>
+    <div class="blur">
+        <div class="form">
+            <h2>New Post:</h2>
+            <label for="title">Title:</label>
+            <input id="title" type="text" [(ngModel)]="formPost.title" />
+            <br>
+            <label for="thought">Thought:</label>
+            <input id="thought" type="text" [(ngModel)]="formPost.thought" />
+            <button (click)="submitPost()">Post</button>
+        </div>
     </div>
 }

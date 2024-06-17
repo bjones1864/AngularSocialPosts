@@ -1,5 +1,10 @@
-<div class="singlePost">
-    <h2>{{ post.title }}</h2>
-    <button class="deleteButton" (click)="deletePost()">X</button>
-    <p>{{ post.thought }}</p>
+<div class="postContainer">
+    <div class="singlePost left">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.thought }}</p>
+    </div>
+    <div class="right">
+        <button (click)="upvote()">&uarr; {{ post.likes }}</button>
+        <button class="deleteButton" (click)="deletePost()">X</button>
+    </div>
 </div>

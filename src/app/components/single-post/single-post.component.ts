@@ -15,4 +15,8 @@ export class SinglePostComponent {
   deletePost(): void {
     this.deleted.emit(this.post);
   }
+
+  upvote(): void{
+    this.post.likes++;
+  }
 }
