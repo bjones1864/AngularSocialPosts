@@ -1,0 +1,10 @@
+<div class="socialPosts">
+    <h1 class="title">Posts</h1>
+
+    @for(p of allPosts; track $index)
+    {
+        <app-single-post [post]="p" (deleted)="onDelete($event)"></app-single-post>
+    }
+
+    <app-post-form (submitted)="onSubmit($event)"></app-post-form>
+</div>
