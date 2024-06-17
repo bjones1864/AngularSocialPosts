@@ -18,6 +18,7 @@ export class PostFormComponent {
     let newPost: Post = {...this.formPost};
     this.submitted.emit(newPost);
     this.formPost = {} as Post;
+    this.toggleDisplay();
   }
 
   toggleDisplay(): void {
